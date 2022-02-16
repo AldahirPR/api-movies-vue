@@ -15,7 +15,7 @@ const app = Vue.createApp({
             const search = this.movieTitle.toLowerCase().replace(/ /g, "+");
 
             const data = await fetch(
-                `http://www.omdbapi.com/?apikey=9d8bdfcb&t=${search}`
+                `https://www.omdbapi.com/?apikey=9d8bdfcb&t=${search}`
             );
 
             const jsonData = await data.json();
